@@ -10,6 +10,12 @@
 
 <h1>Wouter de Vos</h1>
 
+<% flash.each do |type, message| %>
+  <div class="flash <%= type %>">
+    <p><%= message %></p>
+  </div>
+<% end %>
+
 <%= yield %>
 
 </body>

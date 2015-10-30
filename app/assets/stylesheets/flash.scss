@@ -1,0 +1,14 @@
+.flash {
+  width: 100%;
+  padding: 10px 40px;
+}
+
+.flash.notice {
+  background-color: #cfc;
+  color: #030;
+}
+
+.flash.error {
+  background-color: #fcc;
+  color: #303;
+}

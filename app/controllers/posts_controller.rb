@@ -32,6 +32,18 @@ class PostsController < ApplicationController
     end
   end
 
+  def destroy
+    @post = Post.find(params[:id])
+    if @post.destroy
+      redirect_to(
+        { action: :index },
+        notice: "Post was successfully destroyed."
+      )
+    else
+      redirect_to @post, error: "Could not destroy post, please try again."
+    end
+  end
+
   private
 
   # Clean up user input to make sure nothing illegal happens :)

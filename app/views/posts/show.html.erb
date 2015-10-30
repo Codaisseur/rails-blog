@@ -14,5 +14,8 @@
     <li>
       <%= link_to "Edit Post", edit_post_path(@post) %>
     </li>
+    <li>
+      <%= link_to "Destroy Post", @post, method: :delete %>
+    </li>
   </ul>
 </article>
